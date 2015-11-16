@@ -5,3 +5,29 @@
 ul {
   padding-left: 1.5em;
 }
+
+.nav {
+  display: none;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-check {
+  /* Put the checkbox off the top of the screen */
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-color: grey;
+}
+
+@media only screen and (min-width: 25em) { /* 400 */
+
+  .nav-check {
+    display: none
+  }
+
+}
