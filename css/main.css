@@ -21,6 +21,7 @@ ul {
 
 li {
   font-family: 'Comfortaa', cursive;
+  color: black
 }
 
 p {
@@ -29,6 +30,10 @@ p {
 
 .nav {
   display: none;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 .nav-check:checked ~ .nav {
@@ -47,8 +52,12 @@ p {
 
 @media only screen and (min-width: 25em) { /* 400 */
 
-  .nav-check {
+  .nav-label {
     display: none
+  }
+
+  .nav {
+    display: block;
   }
 
 }
