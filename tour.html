@@ -15,8 +15,12 @@
 </head>
 <body>
 
+<ul class="skip-links">
+  <li><a href="#main">Jump to main content</a></li>
+  <li><a href="#nav">Jump to navigation</a></li>
+</ul>
 
-  <header class="grid grid-middle">
+  <header class="grid grid-middle masthead" role="banner">
     <div class="unit xs-1 s-1-4 m-1-4 b-1-4">
       <div class="embed embed--1by1">
         <img class="embed__item" src="http://placehold.it/64x64" alt="">
@@ -25,7 +29,7 @@
     <div class="unit xs-1 s-3-4 m-3-4 b-3-4">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">Navigate</label>
-      <nav class="nav">
+      <nav class="nav" id="nav" role="navigation">
         <ol class="list-group list-group--inline">
           <li class="list-group island-1-2"><a href="index.html">Home</a></li>
           <li class="list-group island-1-2"><a href="#">Tour</a></li>
@@ -42,7 +46,7 @@
 </header>
 
 
-<div class="grid">
+<div class="grid" id="main" role="main">
 
   <div class="unit xs-1 s-1-2 m-1-2 b-1-4">
     <div class="grid">
@@ -51,7 +55,7 @@
           <img class="embed__item" src="http://placehold.it/64x64" alt="">
         </div>
       </div>
-      <div class="unit xs-1 island-1-2">
+      <div class="unit xs-1 island-1-2" id="main">
         <h2 class="pad-t-1-2">Photos, Photos and More Photos</h2>
         <ul>
           <li>Photo books & photo products</li>
@@ -72,7 +76,7 @@
         </div>
       </div>
       <div class="unit xs-1 island-1-2">
-        <h2 class="pad-t-1-2">Master Traker</h2>
+        <h2 class="pad-t-1-2">Master Tracker</h2>
         <ul>
           <li>Budget Tracker</li>
           <li>Track Guests</li>
@@ -118,6 +122,14 @@
   </div>
 
 </div>
+
+
+<footer>
+  <div role="contentinfo">
+    <p class="micro">© 2015 SAAS</p>
+  </div>
+</footer>
+
 
 </body>
 </html>
