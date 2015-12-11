@@ -17,79 +17,121 @@
 
 
   <header class="grid grid-middle masthead" role="banner">
-    <div class="unit xs-1 s-1-4 m-1-4 b-1-4">
-      <div class="embed embed--1by1">
-        <img class="embed__item" src="http://placehold.it/64x64" alt="">
-      </div>
+    <div class="units unit-xs-centered">
+      <div class="grid">
+    <div class="unit xs-1-2 s-1-4 m-1-4 b-1-4">
+      <img class="img-flex push-0" src="images/logo.svg" alt="">
     </div>
     <div class="unit xs-1 s-3-4 m-3-4 b-3-4">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">Navigate</label>
       <nav class="nav" id="nav" role="navigation">
-        <ol class="list-group list-group--inline">
-          <li class="list-group island-1-2"><a href="index.html">Home</a></li>
-          <li class="list-group island-1-2"><a href="tour.html">Tour</a></li>
-          <li class="list-group island-1-2"><a href="pricing.html">Pricing</a></li>
+        <ol class="list-group list-group--inline push-0">
+          <li class="list-group island-1-2"><a class="white" href="index.html">Home</a></li>
+          <li class="list-group island-1-2"><a class="white" href="tour.html">Tour</a></li>
+          <li class="list-group island-1-2"><a class="white" href="pricing.html">Pricing</a></li>
           <li class="list-group island-1-2"><a class="btn btn:hover" href="#">Sign Up</a></li>
         </ol>
       </nav>
     </div>
+  </div>
+  </div>
   </header>
 
-
-<div class="grid" id="main" role="main">
-  <div class="unit xs-1 s-1 m-1 b-1">
-    <h1 class="yotta">Account Details</h1>
-  </div>
-</div>
-
-
 <div class="grid">
-  <div class="unit xs-1 s-1-2 m-1-2 b-1-2">
-    <p class="giga">First Name</p>
-  </div>
+  <div class="units xs-1 unit-xs-centered s-1 m-1 b-1-2">
 
-  <div class="unit xs-1 s-1-2 m-1-2 b-1-2">
-    <p class="giga">Last Name</p>
-  </div>
-</div>
-
-<div class="grid">
-  <div class="unit xs-1">
-    <p class="giga">Email</p>
-  </div>
-
-  <div class="unit xs-1">
-    <p class="giga">Password</p>
-  </div>
-</div>
+    <div class="grid" id="main" role="main">
+      <div class="unit xs-1 s-1 m-1 b-1">
+        <h1 class="yotta">Account Details</h1>
+      </div>
+    </div>
 
 
-<div class="grid">
-  <div class="unit xs-1">
-    <h2 class="yotta">Wedding Details</h2>
-  </div>
-</div>
+    <div class="grid">
+      <div class="unit xs-1 s-1-2 m-1-2 b-1-2">
+        <div class="island-1-2">
+          <label class="block" for="name">First Name</label>
+          <input id="name" name="name" required>
+        </div>
+      </div>
+
+      <div class="unit xs-1 s-1-2 m-1-2 b-1-2">
+        <div class="island-1-2">
+          <label class="block" for="name">Last Name</label>
+          <input id="name" name="name" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="unit xs-1 s-1 m-1 b-1">
+        <div class="island-1-2">
+          <label class="block" for="email">Email</label>
+          <input id="email" type="email" name="email" required placeholder="you@yours.com">
+        </div>
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 b-1">
+        <div class="island-1-2">
+          <label class="block" for="password">Password</label>
+          <input id="password" type="password" name="password" required>
+        </div>
+      </div>
+    </div>
 
 
-<div class="grid">
-  <div class="unit xs-1 s-1-2">
-    <p class="giga">First Name of</p>
-  </div>
-
-  <div class="unit xs-1 s-1-2">
-    <p class="giga">First Name of</p>
-  </div>
-</div>
+    <div class="grid">
+      <div class="unit xs-1 island-1-2">
+        <h2 class="yotta pad-t-2">Wedding Details</h2>
+      </div>
+    </div>
 
 
-<div class="gird">
-  <div class="unit xs-1">
-    <p class="giga">Wedding Date</p>
-  </div>
+    <div class="grid">
+      <div class="unit xs-1 s-1-2">
+        <div class="island-1-2">
+          <label for="person-1">First Name of</label>
+          <select name="person-1-role">
+            <option>Bride</option>
+            <option>Groom</option>
+          </select>
+          <input id="person-1" name="person-1">
+        </div>
+      </div>
 
-  <div class="unit xs-1">
-    <p class="giga">Choose your Website URL</p>
+      <div class="unit xs-1 s-1-2">
+        <div class="island-1-2">
+          <label for="person-2">First Name of</label>
+          <select name="person-2-role">
+            <option>Groom</option>
+            <option>Bride</option>
+          </select>
+          <input id="person-2" name="person-2">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="gird">
+      <div class="unit xs-1">
+        <div class="island-1-2">
+          <label class="block" for="date">Wedding Date</label>
+          <input id="date" type="date" name="date" required>
+        </div>
+      </div>
+
+      <div class="unit xs-1">
+        <div class="island-1-2 eighty push-none">
+          <label class="block push-none" for="url">Choose your Website URL</label>
+          <input id="url" type="url" name="url" required>
+          <span>
+            .one+one.com
+          </span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
